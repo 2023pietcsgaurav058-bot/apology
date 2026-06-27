@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    font-family:'Comic Sans MS',sans-serif;
+    text-align:center;
+    color:white;
+    min-height:100vh;
+
+    background:linear-gradient(
+        -45deg,
+        #ff0080,
+        #ff8c00,
+        #40e0d0,
+        #7b68ee,
+        #00ff88
+    );
+
+    background-size:400% 400%;
+    animation:bg 10s ease infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    padding:50px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:30px;
+    max-width:700px;
+    margin:auto;
+}
+
+img{
+    width:300px;
+    border-radius:15px;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+    margin:10px;
+}
